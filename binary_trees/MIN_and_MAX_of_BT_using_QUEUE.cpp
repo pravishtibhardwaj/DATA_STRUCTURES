@@ -1,6 +1,6 @@
 
 //find minimum and maximum of given binary tree 
-
+#include<queue>
 void min_max(node*root)
 {
 	int min,max;
