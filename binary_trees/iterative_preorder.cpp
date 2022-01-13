@@ -54,9 +54,7 @@ void preorder(node*root)
     
     node*temp=root;
     while(temp!=NULL || !st.empty())
-    {
-        
-        
+    { 
         if(temp!=NULL ){
             cout<<temp->data<<" ";
         st.push(temp);
@@ -73,5 +71,6 @@ void preorder(node*root)
 int main()
 {  
     node*root=create_bt();
+    cout<<"iterative preorder display of tree:";
     preorder(root);
 }
