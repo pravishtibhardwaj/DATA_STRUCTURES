@@ -14,7 +14,6 @@ class node{
 class tree{
     public:
     node*root;
-
 };
 
 node*take_input_levelwise(){
