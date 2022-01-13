@@ -65,7 +65,8 @@ int main()
     for(int i=0;i<n;i++)
     cin>>arr2[i];
     node*root=buildtree(0,n-1,arr1,arr2);
+    cout<<"inorder of tree:";
     inorder(root);
-    cout<<endl; 
+    cout<<endl<<"postorder of tree:"; 
     postorder(root);
 }
