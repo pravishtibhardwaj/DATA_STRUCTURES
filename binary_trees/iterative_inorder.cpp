@@ -49,54 +49,29 @@ node*take_input_levelwise(){
 
     return root;
 }
-void levelorder_display(node*root)
-{
-    queue<node*>q;
-    q.push(root);
-    cout<<root->data<<" ";
-    while(!q.empty())
-    {
-        node*temp=q.front();
-        q.pop(); 
-        if(temp->lc)
-        {
-            cout<<temp->lc->data<<" ";
-            q.push(temp->lc);
-         
-            
-        }
-        if(temp->rc)
-        {
-            cout<<temp->rc->data<<" ";
-            q.push(temp->rc);
-    
-        }
-    }
-    
+
+void inorder(node*root){
+   stack<node*>st;
+   node*temp=root;
+   while(temp!=NULL || !st.empty())
+   {
+       if(temp!=NULL)
+       {
+           st.push(temp);
+           temp=temp->lc;
+       }
+       else{
+       temp=st.top();
+       st.pop();
+       cout<<temp->data<<" ";
+       temp=temp->rc;
+       
+   }
 }
-//void inorder(node*root){
-//    stack<node*>st;
-//    node*temp=root;
-//    while(temp!=NULL || !st.empty())
-//    {
-//        if(temp!=NULL)
-//        {
-//            st.push(temp);
-//            temp=temp->lc;
-//        }
-//        else{
-//        temp=st.top();
-//        st.pop();
-//        cout<<temp->data<<" ";
-//        temp=temp->rc;
-//        
-//    }
-//}
-//}
+}
 int main()
 {
     node*root=take_input_levelwise();
-//    inorder(root);
-    cout<<"levelorder of given tree : ";
-     levelorder_display(root);
+   inorder(root);
+    
 }
