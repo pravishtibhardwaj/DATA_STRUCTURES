@@ -1,5 +1,5 @@
 #include<iostream>
-#include"queue.h"
+#include"queue.h"        //user defined header file is created in which queue is implemented with required operations
 using namespace std;
 class tree{
     public:
@@ -114,7 +114,7 @@ int main()
     cout<<endl<<"inorder:" ;  
     inorder(root);
     int nodes=count_nodes(root);
-    int height=(nodes-1)/2;
+//     int height=(nodes-1)/2;
     cout<<"no of nodes="<<nodes<<endl;
     // cout<<"height="<<height;
     cout<<h;
