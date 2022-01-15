@@ -1,3 +1,4 @@
+//recursive linear search program
 #include<iostream>
 using namespace std;
 int rec_linear(int *arr,int n,int key)
