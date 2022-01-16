@@ -1,9 +1,10 @@
 /*Given the root of a binary tree, return the bottom-up level order traversal of its nodes' values. 
 (i.e., from left to right, level by level from leaf to root).*/
-class Solution {
-public:
-    vector<vector<int>> levelOrderBottom(TreeNode* root) {
-        queue<TreeNode*>q;
+#include<vector>
+#inlcude<algorithm>
+#include<queue>
+  vector<vector<int>> levelOrderBottom(TreeNode* root) {
+       queue<TreeNode*>q;
         vector<int>v1;
         vector<vector<int>>v2;
         if(root==NULL)
@@ -32,5 +33,3 @@ public:
         reverse(v2.begin(),v2.end());
         return v2;
     }
-        
-};
