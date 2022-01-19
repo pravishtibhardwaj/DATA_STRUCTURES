@@ -1,5 +1,17 @@
 /*Given a Binary Tree, write a function to populate next pointer for all nodes. 
-The next pointer for every node should be set to point to inorder successor.*/
+The next pointer for every node should be set to point to inorder successor.
+
+Input:
+           10
+       /  \
+      8    12
+     /
+    3
+  
+
+Output: 3->8 8->10 10->12 12->-1
+*/
+
  void inorder_t(Node*root,vector<Node*>&v)
     {
         if(root==NULL)
