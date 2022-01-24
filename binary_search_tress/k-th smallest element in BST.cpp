@@ -1,3 +1,4 @@
+//kth smallest element
 void inorder(Node*root,vector<int>&v)
     {
     if(root==NULL)
