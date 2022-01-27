@@ -1,3 +1,4 @@
+//right view of binary tree
 vector<int> rightView(Node *root)
     {
           vector<int>v;
