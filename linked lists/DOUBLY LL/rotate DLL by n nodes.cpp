@@ -1,4 +1,5 @@
- Node* countnodes(Node*start,int &c)
+//rotate DLL by n nodes
+Node* countnodes(Node*start,int &c)
     {
         if(start==NULL)
         return NULL;
