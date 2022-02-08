@@ -1,3 +1,4 @@
+//find first and last occurrence of given no. in the array
 #include<iostream>
 using namespace std;
 int first_occur(int arr[],int n, int j,int val)
