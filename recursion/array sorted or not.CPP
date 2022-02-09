@@ -12,6 +12,7 @@ int main()
 {
     int x,arr[100];
     cin>>x;
+    cout<<"enter array elements:";
     for(int i=0;i<x;i++)
     cin>>arr[i];
     cout<<"result="<<sorted(arr,x);
