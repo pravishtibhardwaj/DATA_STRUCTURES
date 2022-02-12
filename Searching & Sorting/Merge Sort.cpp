@@ -1,6 +1,6 @@
 #include<iostream>
 #include<time.h>
-#include "myheaderfile.h"
+#include "myheaderfile.h"   //user defined header file
 using namespace std;
 void merge(int *arr1,int l,int mid,int h)
 {
