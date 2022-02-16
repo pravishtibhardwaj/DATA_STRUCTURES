@@ -1,4 +1,4 @@
-//  WAP to implement a function Rdm(n) which returns an array of random
+// / WAP to implement a function Rdm(n) which returns an array of random
 // numbers{between 0 to 99}, where n is the size of array
 #include<iostream>
 int *Rdm(int n)
