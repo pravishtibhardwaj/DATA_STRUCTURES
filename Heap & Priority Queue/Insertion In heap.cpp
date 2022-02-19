@@ -30,7 +30,7 @@ void print(vector<int>v)
 }
 int main()
 {
-    //vcetor containing elements of max heap
+    //vector containing elements of max heap
     vector<int>v={40,15,20,10,12,19,18};
     insert_node(v,35);
     print(v);
