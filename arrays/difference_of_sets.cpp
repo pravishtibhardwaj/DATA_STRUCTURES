@@ -1,12 +1,15 @@
 #include<iostream>
 using namespace std;
-void intersection(int *A1,int *A2,int *A3,int n1,int n2)
+void diff(int *A1,int *A2,int *A3,int n1,int n2)
 {
     int  p1=0, p2=0, p3=0,c=0;
      while(p1<n1 && p2<n2){
           if(A1[p1]<A2[p2])
           {
+              
+              A3[c++]=A1[p1];
               p1++;
+
           }
           else if(A1[p1]>A2[p2])
           p2++;
@@ -19,7 +22,11 @@ void intersection(int *A1,int *A2,int *A3,int n1,int n2)
         
     }
      }
-      cout<<"after intersection :\n";
+     while(p1<n1)
+     {
+        A3[c++]=A1[p1++];
+     }
+      cout<<"difference A1-A2 :\n";
     for(int i=0;i<c;i++)
     cout<<A3[i]<<" ";
 }
