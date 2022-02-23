@@ -1,4 +1,4 @@
-// deleting root from max heap ///
+// deleting root from max heap /////
 
 #include<iostream>
 #include<vector>
