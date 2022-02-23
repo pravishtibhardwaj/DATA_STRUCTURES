@@ -1,4 +1,4 @@
-// MAX Heap///
+// MAX Heap implemented by Pravishti Bhardwaj///
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -34,6 +34,6 @@ int main()
     vector<int>v={40,15,20,10,12,19,18};
     insert_node(v,35);
     print(v);
-
+    return 0;
 
 }
