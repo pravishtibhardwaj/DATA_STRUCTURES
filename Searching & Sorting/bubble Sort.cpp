@@ -1,5 +1,5 @@
 #include<iostream>
-#include "myheaderfile.h"    /// Rdm function created in this user defined header file
+#include "myheaderfile.h"    /// Rdm function created in this user defined header file///
 #include<time.h>
 
 using namespace std;
